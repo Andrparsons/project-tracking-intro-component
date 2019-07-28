@@ -10,10 +10,51 @@ body {
   font-family: "Barlow", sans-serif;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
 nav {
   font-family: "Barlow Condensed", sans-serif;
 }
 
 .container {
   padding: 2.5rem 2rem;
+}
+
+.logo {
+  height: 1.5625rem;
+  width: 1.5625rem;
+}
+
+/* Menu Button */
+.menu-btn {
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.btn-line {
+  background-color: var(--very-dark-blue);
+  width: 1.5625rem;
+  height: 0.1875rem;
+  margin: 0 0 0.3125rem 0;
+  transition: all 0.5s ease-out;
+}
+
+/* Menu Button close */
+.menu-btn.close {
+  transform: rotate(180deg);
+}
+
+.menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(0.3125rem, 0.3125rem);
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(0.4375rem, -0.375rem);
 }
