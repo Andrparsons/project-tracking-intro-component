@@ -13,7 +13,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 2.5rem 2rem 4rem;
+  padding: 2.5rem 2rem 3.4rem;
 }
 
 nav {
@@ -69,4 +69,17 @@ nav {
 
 .splash img {
   width: 100%;
+}
+
+/* background shape */
+
+.background {
+  width: 50vw;
+  height: 64vh;
+  background-color: var(--light-greyish-blue);
+  border-bottom-left-radius: 3.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
