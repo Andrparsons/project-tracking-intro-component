@@ -87,14 +87,15 @@ nav {
 /* Product sections */
 
 .product-info {
-  padding: 2.1875rem 2rem;
+  padding: 2.1875rem 3rem 2.1875rem 2rem;
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 18px;
 }
 
 .product-name {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
+  font-size: 0.95rem;
+  color: var(--greyish-blue);
 }
 
 .emphasis {
@@ -102,9 +103,47 @@ nav {
   letter-spacing: normal;
   background-color: var(--very-dark-blue);
   font-weight: 700;
+  padding: 0.2375rem 0.6875rem;
+  border-radius: 2rem;
+  margin-right: 0.6rem;
 }
 
 h1 {
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 2.5125rem;
+  margin: 1rem 0;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.15rem;
+  color: var(--dark-greyish-blue);
+  margin-bottom: 2rem;
+}
+
+/* Call to action */
+
+.cta {
+  text-transform: uppercase;
+}
+
+.primary {
+  background-color: var(--red);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.5rem;
+  letter-spacing: 0.05rem;
+  border-radius: 0.3rem;
+  margin-right: 0.7rem;
+}
+
+.preview {
+  color: var(--greyish-blue);
+  font-size: 0.9rem;
+  letter-spacing: 0.15rem;
 }
