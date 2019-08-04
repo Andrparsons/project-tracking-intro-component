@@ -13,7 +13,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 2.5rem 2rem 3.4rem;
+  padding: 2.3rem 2rem 3.7rem;
 }
 
 nav {
@@ -75,7 +75,7 @@ nav {
 
 .background {
   width: 50vw;
-  height: 64vh;
+  height: 26.5rem;
   background-color: var(--light-greyish-blue);
   border-bottom-left-radius: 3.5rem;
   position: absolute;
@@ -87,7 +87,7 @@ nav {
 /* Product sections */
 
 .product-info {
-  padding: 2.1875rem 3rem 2.1875rem 2rem;
+  padding: 1.6rem 2rem 2.1875rem 2rem;
   font-family: "Barlow Condensed", sans-serif;
 }
 
@@ -112,14 +112,17 @@ h1 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2.5125rem;
-  margin: 1rem 0;
+  margin: 1.2rem 0;
+  line-height: 1;
 }
 
 p {
   font-family: "Barlow", sans-serif;
   font-size: 1.15rem;
   color: var(--dark-greyish-blue);
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
+  line-height: 1.35;
+  margin-right: 0.8rem;
 }
 
 /* Call to action */
@@ -139,7 +142,7 @@ p {
   padding: 0.75rem 1.5rem;
   letter-spacing: 0.05rem;
   border-radius: 0.3rem;
-  margin-right: 0.7rem;
+  margin-right: 1.1875rem;
 }
 
 .preview {
