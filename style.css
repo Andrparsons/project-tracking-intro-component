@@ -1,5 +1,6 @@
 :root {
   --red: hsl(0, 100%, 68%);
+  --light-red: hsl(0, 100%, 76%);
   --very-dark-blue: hsl(230, 29%, 20%);
   --dark-greyish-blue: hsl(230, 11%, 40%);
   --greyish-blue: hsl(231, 7%, 65%);
@@ -105,6 +106,25 @@ nav {
   margin-top: 1.545rem;
   font-size: 1.15rem;
   letter-spacing: 0.05rem;
+  position: relative;
+}
+
+.links a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--very-dark-blue);
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.links a:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
 }
 
 hr {
@@ -120,6 +140,10 @@ hr {
   color: var(--greyish-blue);
   margin-top: 1rem;
   margin-bottom: 1.5rem;
+}
+
+.links a:last-child::before {
+  background-color: var(--greyish-blue);
 }
 
 /* Splash image */
@@ -205,6 +229,11 @@ p {
   letter-spacing: 0.05rem;
   border-radius: 0.3rem;
   margin-right: 1.1875rem;
+}
+
+.primary:hover {
+  cursor: pointer;
+  background-color: var(--light-red);
 }
 
 .preview {
